@@ -1,4 +1,4 @@
-## #String
+## # String
 
 **Declaring of String**
 
