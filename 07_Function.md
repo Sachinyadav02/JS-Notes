@@ -104,3 +104,82 @@ const addTwo = function(num){
 
 console.log(addTwo(5))          // Output : 6
 ```
+
+## Arrow Function
+
+It ismore concise and readable way to write function expressions.
+
+``` js
+let printName = (name) => {
+    console.log(name);                   // Output : Sachin
+}
+
+printName("Sachin")
+```
+
+### Explicit and Implicit Return 
+
+**(a) `Explicit Return`**
+
+A function is returned values using the return keyword, it’s called an explicit return.  
+
+``` js
+let aadone = (num) => {
+    return num + 1                      // Explicit Return
+}
+
+let addNumber = aadone(15)
+console.log(addNumber);
+```
+
+**(a) `Implicit Return`**
+
+A function is returned values without using the return keyword, it’s called an implicit return.  
+
+``` js
+let aadone = (num) => (num + 1)                 // Implicit Return
+
+let addNumber = aadone(15)
+console.log(addNumber);
+```
+
+### Parens Rules
+
+Arrow functions can omit parentheses when they have exactly one parameter.  
+
+``` js
+let aadone = (num) => num + 1                // Parens Rules
+
+let addNumber = aadone(15)
+console.log(addNumber);
+```
+
+## Immediately Invoked Function Expressions (IIFE)
+
+They are typically used to create a local scope for variables to prevent them from polluting the global scope.  
+
+**(a) `Named IIFE`**
+
+``` js
+(function connectedDB(userName){
+        console.log(`DB is connected  ${userName}`);          // Output : DB is connected  Abhishek
+    }
+)("Abhishek");                                                // Function call and ;(Imp)
+
+
+(function connectedDB2(userName){
+        console.log(`DB2 is connected  ${userName}`);          // Output : DB is connected  Sachin
+    }
+)("Sachin");                                                  // Function call and ;(Imp)
+```
+
+**(a) `Unamed IIFE`**
+
+```js
+((userName)=>{
+    console.log(`DB2 is connected  ${userName}`);          // Output : DB is connected  Sachin
+})("Sachin");
+```
+
+> [!NOTE]
+> Separate two IIFE functions by semicolon (;).
