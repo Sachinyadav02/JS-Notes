@@ -175,7 +175,7 @@ They are typically used to create a local scope for variables to prevent them fr
 )("Sachin");                                                  // Function call and ;(Imp)
 ```
 
-**(a) `Unamed IIFE`**
+**(a) `UnNamed IIFE`**
 
 ```js
 ((userName)=>{
