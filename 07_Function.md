@@ -182,4 +182,4 @@ They are typically used to create a local scope for variables to prevent them fr
 ```
 
 > [!NOTE]
-> Separate two IIFE functions by semicolon (;).
+> Separate two IIFE functions by semicolon ( ; ).
