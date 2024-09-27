@@ -3,7 +3,7 @@
 - Function is a block of code designed to perform a particular task.  
 - Function is executed when "something" invokes it (calls it).
 
-## How to decalre and call function ??
+## How to decalre and call Function ??
 
 ``` js
 function printName() {                      // Function Defination
@@ -107,7 +107,9 @@ console.log(addTwo(5))          // Output : 6
 
 ## Arrow Function
 
-It ismore concise and readable way to write function expressions.
+It is more concise and readable way to write function expressions.  
+
+### How to decalre and call Arrow Function ??
 
 ``` js
 let printName = (name) => {
